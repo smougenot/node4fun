@@ -35,8 +35,8 @@ gulp.task('nsp', function (cb) {
 });
 
 gulp.task('pre-test', function () {
-  return gulp.src('lib/**/*.js')    .pipe(babel())
-    
+  return gulp.src('lib/**/*.js')
+    .pipe(babel())
     .pipe(istanbul({includeUntested: true}))
     .pipe(istanbul.hookRequire());
 });
