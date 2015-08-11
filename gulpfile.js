@@ -10,6 +10,7 @@ var nsp = require('gulp-nsp');
 var plumber = require('gulp-plumber');
 var coveralls = require('gulp-coveralls');
 var babel = require('gulp-babel');
+var nodemon = require('gulp-nodemon');
 
 // Initialize the babel transpiler so ES2015 files gets compiled
 // when they're loaded
@@ -69,6 +70,23 @@ gulp.task('babel', function () {
   return gulp.src('lib/**/*.js')
     .pipe(babel())
     .pipe(gulp.dest('dist'));
+});
+
+gulp.task('dev', function () {
+  nodemon({
+    script: 'lib/app.js',
+    ext: 'html js',
+    env: {
+      'NODE_ENV': 'development',
+      'DEBUG' : 'app,koa-router'
+    },
+    execMap: {
+      "js": "node --harmony"
+    }
+  })
+    .on('restart', function () {
+      console.log('restarted!')
+    })
 });
 
 gulp.task('prepublish', ['nsp', 'babel']);
