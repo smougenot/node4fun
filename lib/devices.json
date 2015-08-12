@@ -1,0 +1,9 @@
+{
+  "light1" : {
+    "name": "light1",
+    "connector": "gpio",
+    "actions": [
+      "on",
+      "off"]
+  }
+}

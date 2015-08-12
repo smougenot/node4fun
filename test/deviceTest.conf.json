@@ -1,0 +1,16 @@
+{
+  "dev1" : {
+    "name": "dev1",
+    "connector": "gpio",
+    "actions": [
+      "on",
+      "off"]
+  },
+  "dev2" : {
+    "name": "dev2",
+    "connector": "gpio",
+    "actions": [
+      "on",
+      "off"]
+  }
+}

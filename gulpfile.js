@@ -78,7 +78,7 @@ gulp.task('dev', function () {
     ext: 'html js',
     env: {
       'NODE_ENV': 'development',
-      'DEBUG' : 'app,koa-router'
+      'DEBUG' : '*'
     },
     execMap: {
       "js": "node --harmony"
