@@ -1,4 +1,9 @@
-# module-2 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# module-2 
+[![NPM version][npm-image]][npm-url] 
+![Build Status](https://travis-ci.org/smougenot/node4fun.svg?branch=master) 
+[![Dependency Status][daviddm-image]][daviddm-url] 
+[![Coverage percentage][coveralls-image]][coveralls-url]
+
 > prise en main nodejs
 
 
