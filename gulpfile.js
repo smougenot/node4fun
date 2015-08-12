@@ -77,16 +77,16 @@ gulp.task('dev', function () {
     script: 'lib/app.js',
     ext: 'html js',
     env: {
-      'NODE_ENV': 'development',
-      'DEBUG' : '*'
+      NODE_ENV: 'development',
+      DEBUG: '*'
     },
     execMap: {
-      "js": "node --harmony"
+      js: 'node --harmony'
     }
   })
     .on('restart', function () {
-      console.log('restarted!')
-    })
+      console.log('restarted!');
+    });
 });
 
 gulp.task('prepublish', ['nsp', 'babel']);

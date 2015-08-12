@@ -12,5 +12,14 @@
   "undef": true,
   "strict": true,
   "quotmark": "single",
-  "scripturl": true
+  "scripturl": true,
+  "globals" : {
+    /* MOCHA */
+    "describe": false,
+    "it": false,
+    "before": false,
+    "beforeEach": false,
+    "after": false,
+    "afterEach": false
+  }
 }
