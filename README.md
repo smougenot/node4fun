@@ -1,6 +1,6 @@
 # module-2 
 [![NPM version][npm-image]][npm-url] 
-![Build Status](https://travis-ci.org/smougenot/node4fun.svg?branch=master) 
+[![Build Status](https://travis-ci.org/smougenot/node4fun.svg?branch=master)](https://travis-ci.org/smougenot/node4fun)
 [![Dependency Status][daviddm-image]][daviddm-url] 
 [![Coverage percentage][coveralls-image]][coveralls-url]
 
